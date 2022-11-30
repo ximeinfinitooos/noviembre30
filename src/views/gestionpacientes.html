@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="../../assets/styles/estilosHome.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg azulSura navbar-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="">GESTORAPP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/src/views/gestionmedicos.html">Medicos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/src/views/gestionpacientes.html">Pacientes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <br><br><br>
+  <main>
+    <div class="container">
+      <div class="row">
+
+        <div class="col-12 col-md-6">
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="collapse"
+            data-bs-target="#collapseExample">Registrar Paciente</button>
+
+          <div class="card card-body mt-3">
+            <form>
+              <h2>Registro</h2>
+              <div class="row">
+
+                <div class="col-12 col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
+                    <input type="text" class="form-control" placeholder="Nombres y apellidos">
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-heading"></i></span>
+                    <input type="text" class="form-control" placeholder="Documento de identidad">
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row">
+                <div class="col-12">
+                  <select class="form-select">
+                    <option selected>Régimen</option>
+                    <option value="1">Contributivo</option>
+                    <option value="1">Subsidiado</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <select class="form-select">
+                    <option selected>Grupo de ingresos</option>
+                    <option value="1">A</option>
+                    <option value="1">B</option>
+                    <option value="1">C</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone"></i></span>
+                    <input type="text" class="form-control" placeholder="Teléfono">
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></i></span>
+                    <input type="text" class="form-control" placeholder="Correo electrónico">
+                  </div>
+                </div>
+              </div>
+
+              <div class="row mt-3">
+                <div class="col-12">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1"><i class="bi bi-cash-coin"></i></span>
+                    <input type="text" class="form-control" placeholder="Cuota moderadora">
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+          </div>
+
+        </div>
+
+        <div class="col-12 col-md-6">
+          <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../../assets/img/pacientes2.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../../assets/img/pacientes4.png" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="../../assets/img/pacientes3.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+              data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+
+
+
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <!-- Section: Social media -->
+      <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+          <span>Conéctate con nosotros por medio de nuestras redes sociales</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-google"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="" class="me-4 text-reset">
+            <i class="bi bi-github"></i>
+          </a>
+        </div>
+        <!-- Right -->
+      </section>
+      <!-- Section: Social media -->
+
+      <!-- Section: Links  -->
+      <section class="footer">
+        <div class="container text-center text-md-start mt-5">
+          <!-- Grid row -->
+          <div class="row mt-3">
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+              <!-- Content -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                <i class="fas fa-gem me-3"></i>Eps Sura
+              </h6>
+              <p>
+               <img src="../../assets/img/epssura.png" alt="">
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Nosotros
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">COVID</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Nuestras oficinas</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Linea ética</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Atención virtual</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Usuarios
+              </h6>
+              <p>
+                <a href="#!" class="text-reset">Salud mental</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Programas de bienestar</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Órdenes médicas</a>
+              </p>
+              <p>
+                <a href="#!" class="text-reset">Ayuda</a>
+              </p>
+            </div>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">Programador</h6>
+              <p><i class="bi bi-house-door-fill"></i> Colombia, La Estrella - Antioquia</p>
+              <p>
+                <i class="bi bi-envelope"></i>
+                lgonzalezl@sura.com.co
+              </p>
+              <p><i class="bi bi-telephone"></i> + 316 363 2860</p>
+
+            </div>
+            <!-- Grid column -->
+          </div>
+          <!-- Grid row -->
+        </div>
+      </section>
+      <!-- Section: Links  -->
+
+      
+    </footer>
+    <!-- Footer -->
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script src="../helpers/wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
+</body>
+
+</html>
