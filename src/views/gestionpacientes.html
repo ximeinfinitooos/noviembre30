@@ -55,14 +55,14 @@
                 <div class="col-12 col-md-6">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-circle"></i></span>
-                    <input type="text" class="form-control" placeholder="Nombres y apellidos">
+                    <input type="text" class="form-control" placeholder="Nombres y apellidos" id="nombre">
                   </div>
                 </div>
 
                 <div class="col-12 col-md-6">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-card-heading"></i></span>
-                    <input type="text" class="form-control" placeholder="Documento de identidad">
+                    <input type="text" class="form-control" placeholder="Documento de identidad" id="documentos">
                   </div>
                 </div>
               </div>
@@ -70,7 +70,7 @@
 
               <div class="row">
                 <div class="col-12">
-                  <select class="form-select">
+                  <select class="form-select" id="regimen">
                     <option selected>Régimen</option>
                     <option value="1">Contributivo</option>
                     <option value="1">Subsidiado</option>
@@ -80,7 +80,7 @@
 
               <div class="row mt-3">
                 <div class="col-12">
-                  <select class="form-select">
+                  <select class="form-select" id="grupoIngresos">
                     <option selected>Grupo de ingresos</option>
                     <option value="1">A</option>
                     <option value="1">B</option>
@@ -93,13 +93,13 @@
                 <div class="col-12 col-md-6">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-telephone"></i></span>
-                    <input type="text" class="form-control" placeholder="Teléfono">
+                    <input type="text" class="form-control" placeholder="Teléfono" id="telefonoPaciente">
                   </div>
                 </div>
                 <div class="col-12 col-md-6">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope-fill"></i></i></span>
-                    <input type="text" class="form-control" placeholder="Correo electrónico">
+                    <input type="text" class="form-control" placeholder="Correo electrónico" id="correoPaciente">
                   </div>
                 </div>
               </div>
@@ -108,12 +108,12 @@
                 <div class="col-12">
                   <div class="input-group mb-3">
                     <span class="input-group-text" id="basic-addon1"><i class="bi bi-cash-coin"></i></span>
-                    <input type="text" class="form-control" placeholder="Cuota moderadora">
+                    <input type="text" class="form-control" placeholder="Cuota moderadora" id="cuotaModeradora">
                   </div>
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-primary w-100">Enviar</button>
+              <button type="submit" class="btn btn-primary w-100" id="btnRegistrar">Enviar</button>
             </form>
           </div>
 
@@ -276,6 +276,8 @@
   <script>
     new WOW().init();
   </script>
+  <script src="../controllers/controladorpacientes.js" type="module"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

@@ -1,6 +1,6 @@
 import {validarFormulario} from'./validacionFormularioMedico.js'
 //creamos una funcion que nos permita recibir los datos del formulario
-export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspecialidad,etiquetaRegistro,etiquetacorreo,etiquetaMedico,etiquetadescripcion,etiquetafotografia){
+export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspecialidad,etiquetaRegistro,etiquetacorreo,etiquetaMedico,etiquetadescripcion,etiquetafotografias){
 
     let nombresMedico=etiquetaNombre.value
     let documentoMedico=etiquetaDocumento.value
@@ -10,7 +10,7 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspeciali
     let sedeMedico=etiquetaMedico.value
     let horarioMedico=etiquetaMedico.value
     let descripcion=etiquetadescripcion.value
-    let fotografia=etiquetafotografia.value
+    let fotografias=etiquetafotografias.value
     
     // console.log(nombresMedico)
     // console.log(documentoMedico)
@@ -19,7 +19,7 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspeciali
     //debemos almacenar todos los valores del formulario en una sola variable
     //OBJETO= almacenar varios datos en 1 solo espacio de memoria
     let datosformularioMedico={
-        nombre:nombresMedico,
+        nombres:nombresMedico,
         documento:documentoMedico,
         especialidad:especialidadMedico,
         registro:registroProfesional,
@@ -27,8 +27,10 @@ export function capturarDatos(etiquetaNombre,etiquetaDocumento,etiquetaEspeciali
         sede:sedeMedico,
         horario:horarioMedico, 
         descripcion:descripcion,
-        foto:fotografia,
+        fotografia:fotografias,
     }
+
+    console.log(datosformularioMedico)
     
     validarFormulario(datosformularioMedico)
 }

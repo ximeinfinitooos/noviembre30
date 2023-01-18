@@ -16,7 +16,6 @@ let etiquetadescripcion=document.getElementById("descripcion")
 let etiquetafotografia=document.getElementById("fotografia")
 
 
-
 //detectar el evento de clic
 etiquetaBoton.addEventListener("click", function(evento){
     
